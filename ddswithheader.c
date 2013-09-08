@@ -79,18 +79,6 @@ thigh=(int)((4294967296.0F*highfreqf/SAMPLERATE_F)+0.5);
 //////// create audio
 
 // DEBUG
-// part 0a: 3 second of 0 (1000 Hz)
-for (c1=0; c1<675; c1++) {
-	generate_and_write(0x00,1); // write to stdout
-}; // end for
-
-
-// part 0b: 3 second of 1 (2400 Hz)
-for (c1=0; c1<675; c1++) {
-	generate_and_write(0xff,1); // write to stdout
-}; // end for
-
-
 // part 1: 500 ms (minimum 900 bits) learning pattern 0b00110011
 // we send 113 octets (=904 bits)
 
